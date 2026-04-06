@@ -1,0 +1,62 @@
+/* Instagram Feed Plugin Styles */
+
+.igf-feed {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.igf-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.igf-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.igf-post-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.igf-post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.igf-caption {
+    line-height: 1.6;
+    color: #333;
+}
+
+.igf-stats {
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+.igf-error {
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 4px solid #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .igf-feed {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .igf-feed {
+        grid-template-columns: 1fr !important;
+    }
+}
